@@ -74,6 +74,11 @@ public class TelaLogin extends javax.swing.JFrame {
         btnEntrar.setBorder(null);
         btnEntrar.setBorderPainted(false);
         btnEntrar.setFocusCycleRoot(true);
+        btnEntrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEntrarActionPerformed(evt);
+            }
+        });
 
         lblBemVindo.setBackground(new java.awt.Color(116, 116, 116));
         lblBemVindo.setFont(new java.awt.Font("Roboto", 0, 40)); // NOI18N
@@ -125,24 +130,23 @@ public class TelaLogin extends javax.swing.JFrame {
             .addGroup(bgDadosLayout.createSequentialGroup()
                 .addContainerGap(123, Short.MAX_VALUE)
                 .addGroup(bgDadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgDadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(lblLogin)
+                        .addGroup(bgDadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(btnEntrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtLogin, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(passSenha, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lblSenha))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgDadosLayout.createSequentialGroup()
-                        .addComponent(btnMinimizar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnSair, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgDadosLayout.createSequentialGroup()
-                        .addGroup(bgDadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgDadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblLogin)
-                                .addGroup(bgDadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(btnEntrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(txtLogin, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(passSenha, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(lblSenha))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgDadosLayout.createSequentialGroup()
-                                .addComponent(lblBemVindo)
-                                .addGap(37, 37, 37)))
-                        .addGap(110, 110, 110))))
+                        .addComponent(lblBemVindo)
+                        .addGap(37, 37, 37)))
+                .addGap(110, 110, 110))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgDadosLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnMinimizar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnSair, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         bgDadosLayout.setVerticalGroup(
             bgDadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -242,6 +246,11 @@ public class TelaLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.setExtendedState(TelaLogin.ICONIFIED);
     }//GEN-LAST:event_btnMinimizarActionPerformed
+
+    private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
+        // TODO add your handling code here:
+    
+    }//GEN-LAST:event_btnEntrarActionPerformed
 
     public static void main(String args[]) {
 
